@@ -5,6 +5,6 @@ lint:
 	buf lint
 
 gencode:
-	./gencode.sh
+	npm run generate
 
 .PHONY: format, lint, gencode
