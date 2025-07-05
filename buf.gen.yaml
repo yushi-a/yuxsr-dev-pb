@@ -1,22 +1,24 @@
-version: v1
+version: v2
+clean: true
 managed:
   enabled: true
-  go_package_prefix:
-    default: github.com/yuxsr/yuxsr-dev-pb/gencode/go
+  override:
+    - file_option: go_package_prefix
+      value: github.com/yuxsr/yuxsr_dev_pb/gencode/go
 plugins:
-  - plugin: go
+  - remote: buf.build/protocolbuffers/go:v1.31.0
     out: gencode/go
     opt: paths=source_relative
-  - plugin: go-grpc
+  - remote: buf.build/grpc/go:v1.5.1
     out: gencode/go
-    opt: 
+    opt:
       - paths=source_relative
       - require_unimplemented_servers=false
-  - plugin: es
-    path: node_modules/.bin/protoc-gen-es
+  - remote: buf.build/bufbuild/es:v1.4.1
     opt: target=ts
     out: gencode/ts
-  - plugin: connect-es
-    path: node_modules/.bin/protoc-gen-connect-es
+  - remote: buf.build/connectrpc/es:v1.1.3
     opt: target=ts
     out: gencode/ts
+inputs:
+  - directory: proto
