@@ -1,4 +1,3 @@
-import { NotifyRequest, NotifyResponse } from "./notificator_pb.js";
 /**
  * @generated from service yuxsr_dev_pb.v1.NotificatorService
  */
@@ -10,8 +9,8 @@ export declare const NotificatorService: {
          */
         readonly notify: {
             readonly name: "Notify";
-            readonly I: typeof NotifyRequest;
-            readonly O: typeof NotifyResponse;
+            readonly I: any;
+            readonly O: any;
             readonly kind: any;
         };
     };
