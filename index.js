@@ -1,18 +1,10 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __exportStar = (this && this.__exportStar) || function(m, exports) {
-    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./gencode/ts/yuxsr_dev_pb/v1/notificator_connect"), exports);
-__exportStar(require("./gencode/ts/yuxsr_dev_pb/v1/notificator_pb"), exports);
+exports.NotificatorService = exports.NotificatorServiceSchema = exports.NotifyResponseSchema = exports.NotifyRequestSchema = exports.file_yuxsr_dev_pb_v1_notificator = void 0;
+var notificator_pb_1 = require("./gencode/ts/yuxsr_dev_pb/v1/notificator_pb");
+Object.defineProperty(exports, "file_yuxsr_dev_pb_v1_notificator", { enumerable: true, get: function () { return notificator_pb_1.file_yuxsr_dev_pb_v1_notificator; } });
+Object.defineProperty(exports, "NotifyRequestSchema", { enumerable: true, get: function () { return notificator_pb_1.NotifyRequestSchema; } });
+Object.defineProperty(exports, "NotifyResponseSchema", { enumerable: true, get: function () { return notificator_pb_1.NotifyResponseSchema; } });
+Object.defineProperty(exports, "NotificatorServiceSchema", { enumerable: true, get: function () { return notificator_pb_1.NotificatorService; } });
+var notificator_connect_1 = require("./gencode/ts/yuxsr_dev_pb/v1/notificator_connect");
+Object.defineProperty(exports, "NotificatorService", { enumerable: true, get: function () { return notificator_connect_1.NotificatorService; } });

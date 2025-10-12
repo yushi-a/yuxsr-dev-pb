@@ -14,10 +14,10 @@ plugins:
     opt:
       - paths=source_relative
       - require_unimplemented_servers=false
-  - remote: buf.build/bufbuild/es:v1.4.1
+  - remote: buf.build/bufbuild/es:v2.9.0
     opt: target=ts
     out: gencode/ts
-  - remote: buf.build/connectrpc/es:v1.1.3
+  - remote: buf.build/connectrpc/es:v1.6.1
     opt: target=ts
     out: gencode/ts
 inputs:
