@@ -10,7 +10,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_ROOT="${SCRIPT_DIR}"
 
 GO_PROTO_PATH="${PROJECT_ROOT}/gencode/go/yuxsr_dev_pb"
-GO_MODULE_NAME="github.com/yuxsr/yuxsr-dev-pb/gencode/go/yuxsr_dev_pb"
+GO_MODULE_NAME="github.com/yushi-a/yuxsr-dev-pb/gencode/go/yuxsr_dev_pb"
 
 
 # --- Functions ---

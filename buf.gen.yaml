@@ -4,7 +4,7 @@ managed:
   enabled: true
   override:
     - file_option: go_package_prefix
-      value: github.com/yuxsr/yuxsr_dev_pb/gencode/go
+      value: github.com/yushi-a/yuxsr_dev_pb/gencode/go
 plugins:
   - remote: buf.build/protocolbuffers/go:v1.31.0
     out: gencode/go

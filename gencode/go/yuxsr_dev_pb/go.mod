@@ -1,6 +1,6 @@
-module github.com/yuxsr/yuxsr-dev-pb/gencode/go/yuxsr_dev_pb
+module github.com/yushi-a/yuxsr-dev-pb/gencode/go/yuxsr_dev_pb
 
-go 1.25.1
+go 1.26.2
 
 require (
 	google.golang.org/grpc v1.80.0
