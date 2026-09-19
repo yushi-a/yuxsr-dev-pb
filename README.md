@@ -29,7 +29,7 @@ CI が「再生成した結果とコミット内容が一致すること」を�
 
 | ツール | 用途 |
 | --- | --- |
-| Node.js 20 以上 | buf CLI・protoc-gen-es・TypeScript の実行 |
+| Node.js 22 以上 | buf CLI・protoc-gen-es・TypeScript の実行（`protoc-gen-es` v2.15.0 以降が Node 22 以上を要求します。`.nvmrc` も 22 です） |
 | Go 1.25 以上 | protoc プラグイン（Go 製）のビルドと Go モジュールの整理 |
 
 buf CLI と protoc プラグインはすべて `npm install` および `generate.sh` が自動で用意するため、
