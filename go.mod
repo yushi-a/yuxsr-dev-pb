@@ -1,9 +1,9 @@
 module github.com/yushi-a/yuxsr-dev-pb
 
-go 1.25.0
+go 1.26.0
 
 require (
-	connectrpc.com/connect v1.21.0
+	connectrpc.com/connect v1.21.1
 	google.golang.org/grpc v1.83.2
 	google.golang.org/protobuf v1.36.12
 )
