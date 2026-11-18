@@ -1,6 +1,6 @@
 module github.com/yushi-a/yuxsr-dev-pb
 
-go 1.26.0
+go 1.26.11
 
 require (
 	connectrpc.com/connect v1.21.1
